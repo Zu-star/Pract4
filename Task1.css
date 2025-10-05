@@ -1,0 +1,49 @@
+body {
+    background-color: cadetblue;
+}
+
+.cont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.boxy {
+    display: flex;
+    min-width: 200px;
+    background: #A7D9E0;
+    border: 2px solid navy;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: darkslategrey;
+}
+
+@media (max-width: 767px) {
+    .boxy {
+        flex: 100%;
+        background: #85BBC3 ;
+
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .boxy {
+        flex: 30%;
+        background: #93D1DA;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .boxy {
+        flex: 20%;
+    }
+}
